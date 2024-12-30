@@ -10,3 +10,10 @@ WORKDIR /Ultra-Forward-Bot
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
 CMD ["/bin/bash", "/start.sh"]
+
+# Install dependencies
+RUN pip install -r requirements.txt
+
+# Run patch script
+COPY patch_pyrogram.py /app/patch_pyrogram.py
+RUN python /app/patch_pyrogram.py
