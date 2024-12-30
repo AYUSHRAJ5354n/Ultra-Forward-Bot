@@ -1,24 +1,9 @@
-# Jishu Developer 
-# Don't Remove Credit 🥺
-# Telegram Channel @Madflix_Bots
-# Backup Channel @JishuBotz
-# Developer @JishuDeveloper
+from flask import Flask
+app = Flask(__name__)
 
-from typing import Union, List  # Add this line
+@app.route('/')
+def hello():
+    return "Hello, World!"
 
-from bot import Bot
-
-app = Bot()
-app.run()
-
-
-
-
-
-
-
-# Jishu Developer 
-# Don't Remove Credit 🥺
-# Telegram Channel @Madflix_Bots
-# Backup Channel @JishuBotz
-# Developer @JishuDeveloper
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8080)
