@@ -17,4 +17,6 @@ RUN chmod +x /start.sh
 COPY patch_pyrogram.py /app/patch_pyrogram.py
 RUN python /app/patch_pyrogram.py
 
+EXPOSE 8080   # Ensure port 8080 is exposed
+
 CMD ["/bin/bash", "/start.sh"]
