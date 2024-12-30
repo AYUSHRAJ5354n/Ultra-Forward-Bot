@@ -4,7 +4,7 @@
 # Backup Channel @JishuBotz
 # Developer @JishuDeveloper
 
-
+from typing import Union, List  # Add this line
 
 from bot import Bot
 
